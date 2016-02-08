@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D183B1A1B8E69E4003F8076 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D183B191B8E69E4003F8076 /* MessageUI.framework */; };
+		1D183B1F1B8E70B6003F8076 /* PromptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D183B1E1B8E70B6003F8076 /* PromptViewController.m */; };
+		1DD292041B8D876F006319F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292031B8D876F006319F8 /* main.m */; };
+		1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292061B8D876F006319F8 /* AppDelegate.m */; };
+		1DD2920A1B8D876F006319F8 /* Prompter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292081B8D876F006319F8 /* Prompter.xcdatamodeld */; };
+		1DD292101B8D876F006319F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DD2920E1B8D876F006319F8 /* Main.storyboard */; };
+		1DD292121B8D876F006319F8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DD292111B8D876F006319F8 /* Images.xcassets */; };
+		1DD292151B8D876F006319F8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DD292131B8D876F006319F8 /* LaunchScreen.xib */; };
+		1DD292211B8D876F006319F8 /* PrompterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292201B8D876F006319F8 /* PrompterTests.m */; };
+		1DD2922E1B8D8823006319F8 /* SpeechesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */; };
+		1DD292321B8D8E9C006319F8 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292311B8D8E9C006319F8 /* Note.m */; };
+		1DD292361B8D8F88006319F8 /* SpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292351B8D8F88006319F8 /* SpeechViewController.m */; };
+		1DD292391B8D984D006319F8 /* SpeechTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DD292381B8D984D006319F8 /* SpeechTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1DD2921B1B8D876F006319F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1DD291F61B8D876F006319F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1DD291FD1B8D876F006319F8;
+			remoteInfo = Prompter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D183B191B8E69E4003F8076 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1D183B1D1B8E70B6003F8076 /* PromptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromptViewController.h; sourceTree = "<group>"; };
+		1D183B1E1B8E70B6003F8076 /* PromptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromptViewController.m; sourceTree = "<group>"; };
+		1DD291FE1B8D876F006319F8 /* Prompter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prompter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD292021B8D876F006319F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD292031B8D876F006319F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1DD292051B8D876F006319F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1DD292061B8D876F006319F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1DD292091B8D876F006319F8 /* Prompter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Prompter.xcdatamodel; sourceTree = "<group>"; };
+		1DD2920F1B8D876F006319F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1DD292111B8D876F006319F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1DD292141B8D876F006319F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1DD2921A1B8D876F006319F8 /* PrompterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrompterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DD2921F1B8D876F006319F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1DD292201B8D876F006319F8 /* PrompterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrompterTests.m; sourceTree = "<group>"; };
+		1DD2922C1B8D8823006319F8 /* SpeechesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechesTableViewController.h; sourceTree = "<group>"; };
+		1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechesTableViewController.m; sourceTree = "<group>"; };
+		1DD292301B8D8E9C006319F8 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		1DD292311B8D8E9C006319F8 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		1DD292341B8D8F88006319F8 /* SpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechViewController.h; sourceTree = "<group>"; };
+		1DD292351B8D8F88006319F8 /* SpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechViewController.m; sourceTree = "<group>"; };
+		1DD292371B8D984D006319F8 /* SpeechTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTableViewCell.h; sourceTree = "<group>"; };
+		1DD292381B8D984D006319F8 /* SpeechTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1DD291FB1B8D876F006319F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D183B1A1B8E69E4003F8076 /* MessageUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD292171B8D876F006319F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D183B1C1B8E70A3003F8076 /* Prompt View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1D183B1D1B8E70B6003F8076 /* PromptViewController.h */,
+				1D183B1E1B8E70B6003F8076 /* PromptViewController.m */,
+			);
+			name = "Prompt View Controller";
+			sourceTree = "<group>";
+		};
+		1DD291F51B8D876F006319F8 = {
+			isa = PBXGroup;
+			children = (
+				1DD292001B8D876F006319F8 /* Prompter */,
+				1DD2921D1B8D876F006319F8 /* PrompterTests */,
+				1DD291FF1B8D876F006319F8 /* Products */,
+				1D183B191B8E69E4003F8076 /* MessageUI.framework */,
+			);
+			sourceTree = "<group>";
+		};
+		1DD291FF1B8D876F006319F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1DD291FE1B8D876F006319F8 /* Prompter.app */,
+				1DD2921A1B8D876F006319F8 /* PrompterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1DD292001B8D876F006319F8 /* Prompter */ = {
+			isa = PBXGroup;
+			children = (
+				1DD2922F1B8D8E7D006319F8 /* Managed Objects */,
+				1DD2922A1B8D87F1006319F8 /* App Delegate */,
+				1DD2922B1B8D8801006319F8 /* Speeches Table View Controller */,
+				1DD292331B8D8F74006319F8 /* Speech View Controller */,
+				1D183B1C1B8E70A3003F8076 /* Prompt View Controller */,
+				1DD2920E1B8D876F006319F8 /* Main.storyboard */,
+				1DD292111B8D876F006319F8 /* Images.xcassets */,
+				1DD292131B8D876F006319F8 /* LaunchScreen.xib */,
+				1DD292081B8D876F006319F8 /* Prompter.xcdatamodeld */,
+				1DD292011B8D876F006319F8 /* Supporting Files */,
+			);
+			path = Prompter;
+			sourceTree = "<group>";
+		};
+		1DD292011B8D876F006319F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292021B8D876F006319F8 /* Info.plist */,
+				1DD292031B8D876F006319F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DD2921D1B8D876F006319F8 /* PrompterTests */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292201B8D876F006319F8 /* PrompterTests.m */,
+				1DD2921E1B8D876F006319F8 /* Supporting Files */,
+			);
+			path = PrompterTests;
+			sourceTree = "<group>";
+		};
+		1DD2921E1B8D876F006319F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1DD2921F1B8D876F006319F8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DD2922A1B8D87F1006319F8 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292051B8D876F006319F8 /* AppDelegate.h */,
+				1DD292061B8D876F006319F8 /* AppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		1DD2922B1B8D8801006319F8 /* Speeches Table View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DD2922C1B8D8823006319F8 /* SpeechesTableViewController.h */,
+				1DD2922D1B8D8823006319F8 /* SpeechesTableViewController.m */,
+				1DD292371B8D984D006319F8 /* SpeechTableViewCell.h */,
+				1DD292381B8D984D006319F8 /* SpeechTableViewCell.m */,
+			);
+			name = "Speeches Table View Controller";
+			sourceTree = "<group>";
+		};
+		1DD2922F1B8D8E7D006319F8 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292301B8D8E9C006319F8 /* Note.h */,
+				1DD292311B8D8E9C006319F8 /* Note.m */,
+			);
+			name = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		1DD292331B8D8F74006319F8 /* Speech View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DD292341B8D8F88006319F8 /* SpeechViewController.h */,
+				1DD292351B8D8F88006319F8 /* SpeechViewController.m */,
+			);
+			name = "Speech View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1DD291FD1B8D876F006319F8 /* Prompter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD292241B8D876F006319F8 /* Build configuration list for PBXNativeTarget "Prompter" */;
+			buildPhases = (
+				1DD291FA1B8D876F006319F8 /* Sources */,
+				1DD291FB1B8D876F006319F8 /* Frameworks */,
+				1DD291FC1B8D876F006319F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prompter;
+			productName = Prompter;
+			productReference = 1DD291FE1B8D876F006319F8 /* Prompter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1DD292191B8D876F006319F8 /* PrompterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DD292271B8D876F006319F8 /* Build configuration list for PBXNativeTarget "PrompterTests" */;
+			buildPhases = (
+				1DD292161B8D876F006319F8 /* Sources */,
+				1DD292171B8D876F006319F8 /* Frameworks */,
+				1DD292181B8D876F006319F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1DD2921C1B8D876F006319F8 /* PBXTargetDependency */,
+			);
+			name = PrompterTests;
+			productName = PrompterTests;
+			productReference = 1DD2921A1B8D876F006319F8 /* PrompterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1DD291F61B8D876F006319F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Christian Villa";
+				TargetAttributes = {
+					1DD291FD1B8D876F006319F8 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 2MVJ2J83B6;
+					};
+					1DD292191B8D876F006319F8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 1DD291FD1B8D876F006319F8;
+					};
+				};
+			};
+			buildConfigurationList = 1DD291F91B8D876F006319F8 /* Build configuration list for PBXProject "Prompter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1DD291F51B8D876F006319F8;
+			productRefGroup = 1DD291FF1B8D876F006319F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1DD291FD1B8D876F006319F8 /* Prompter */,
+				1DD292191B8D876F006319F8 /* PrompterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1DD291FC1B8D876F006319F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD292101B8D876F006319F8 /* Main.storyboard in Resources */,
+				1DD292151B8D876F006319F8 /* LaunchScreen.xib in Resources */,
+				1DD292121B8D876F006319F8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD292181B8D876F006319F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1DD291FA1B8D876F006319F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD292321B8D8E9C006319F8 /* Note.m in Sources */,
+				1DD2920A1B8D876F006319F8 /* Prompter.xcdatamodeld in Sources */,
+				1D183B1F1B8E70B6003F8076 /* PromptViewController.m in Sources */,
+				1DD292361B8D8F88006319F8 /* SpeechViewController.m in Sources */,
+				1DD292071B8D876F006319F8 /* AppDelegate.m in Sources */,
+				1DD292041B8D876F006319F8 /* main.m in Sources */,
+				1DD2922E1B8D8823006319F8 /* SpeechesTableViewController.m in Sources */,
+				1DD292391B8D984D006319F8 /* SpeechTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DD292161B8D876F006319F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DD292211B8D876F006319F8 /* PrompterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1DD2921C1B8D876F006319F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1DD291FD1B8D876F006319F8 /* Prompter */;
+			targetProxy = 1DD2921B1B8D876F006319F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1DD2920E1B8D876F006319F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DD2920F1B8D876F006319F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1DD292131B8D876F006319F8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DD292141B8D876F006319F8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DD292221B8D876F006319F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1DD292231B8D876F006319F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1DD292251B8D876F006319F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Prompter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		1DD292261B8D876F006319F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Prompter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		1DD292281B8D876F006319F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrompterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prompter.app/Prompter";
+			};
+			name = Debug;
+		};
+		1DD292291B8D876F006319F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrompterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Prompter.app/Prompter";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DD291F91B8D876F006319F8 /* Build configuration list for PBXProject "Prompter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD292221B8D876F006319F8 /* Debug */,
+				1DD292231B8D876F006319F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DD292241B8D876F006319F8 /* Build configuration list for PBXNativeTarget "Prompter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD292251B8D876F006319F8 /* Debug */,
+				1DD292261B8D876F006319F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DD292271B8D876F006319F8 /* Build configuration list for PBXNativeTarget "PrompterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DD292281B8D876F006319F8 /* Debug */,
+				1DD292291B8D876F006319F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1DD292081B8D876F006319F8 /* Prompter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1DD292091B8D876F006319F8 /* Prompter.xcdatamodel */,
+			);
+			currentVersion = 1DD292091B8D876F006319F8 /* Prompter.xcdatamodel */;
+			path = Prompter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1DD291F61B8D876F006319F8 /* Project object */;
+}
